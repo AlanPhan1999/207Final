@@ -112,13 +112,13 @@ To address this, we implemented a group-by operation followed by an aggregation 
 This process resulted in a streamlined dataset with a reduced number of observations, from 3.6k to 2.3k. By consolidating duplicate entries and organizing the data systematically, we ensured the integrity and accuracy of our merged dataset, laying the groundwork for subsequent analysis and insights into the food landscape in the greater Sacramento area.
 
 # Data Visualization
-![alt text](Data/Category_graph.jpg)
+![alt text](Images/Category_graph.jpg)
 
 
-![alt text](Data/restaurant_rating_graph.jpg)
+![alt text](Images/restaurant_rating_graph.jpg)
 
 
-[Map of Sacramento Restaurants](Data/map.html)
+[Map of Sacramento Restaurants](Images/map.html)
 
 # Discussion
 

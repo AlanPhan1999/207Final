@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Introduction &sol; Background</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <hr>
+<h2 id="title-sta-220-project-insert-titleauthor-sandeep-nair-alan-phan-thommas-phandate-march-20-2024outputhtml_documentdf_print-pagednumber_sections-yes">title: &quot;STA 220 Project: Insert Title&quot;
+author: &quot;Sandeep Nair, Alan Phan, Thommas Phan&quot;
+date: &quot;March 20, 2024&quot;
+output:
+html_document:
+df_print: paged
+number_sections: yes</h2>
+<h1 id="introduction--background">Introduction / Background</h1>
+<p>In today's landscape of heightened concern for food safety and public health, regulatory bodies like the Sacramento County Environmental Management Department (SCEMD) play a crucial role in ensuring community well-being. Driven by a commitment to enhancing quality of life, SCEMD employs various strategies including education, surveillance, enforcement, and community service, with a focus on mitigating foodborne illnesses—a significant health and economic burden.</p>
+<p>Millions suffer from foodborne illnesses annually in the US, prompting organizations like the Centers for Disease Control and Prevention (CDC) and the Food and Drug Administration (FDA) to identify key risk factors and interventions. These encompass issues such as improper temperature control, inadequate cooking, poor hygiene, and contaminated equipment, among others.</p>
+<p>SCEMD conducts routine inspections of retail food establishments in Sacramento County, enforcing strict compliance with health and safety codes outlined in state and county regulations. These inspections are guided by comprehensive protocols, such as the Sacramento County Retail Food Code Inspection Guide, aimed at maintaining standardized practices across establishments.</p>
+<p>Effective food safety regulation hinges on proactive measures to identify and mitigate risks within the food supply chain. SCEMD oversees a diverse range of establishments, implementing measures to uphold hygiene and sanitation standards while reducing the incidence of foodborne illnesses.</p>
+<p>In addition to enforcement, SCEMD engages in community outreach and educational initiatives, fostering collaboration between stakeholders. These efforts aim to empower establishments and consumers with knowledge and resources for maintaining a safe food environment.</p>
+<p>This project embarks on an exploratory data analysis, leveraging data scraped from SCEMD reports and Yelp. Through visualization and observation, the project aims to uncover insights into health code violations within Sacramento County’s food establishments over the past year, contributing to the broader discourse on food safety and regulatory enforcement.</p>
+<h1 id="data-scraping--organization">Data Scraping / Organization</h1>
+<p>All data was scraped via Python and processed as either lists or dictionaries, and made into a data frame for visualizations and report format writeup in R Markdown, in the following sections. Below will outline the courses of action taken to scrape and organize the data and any problems we faced during the process.</p>
+<h2 id="obtaining-links-to-sacramento-county-inspection-data-for-the-past-12-months">Obtaining Links to Sacramento County Inspection Data for the Past 12 Months</h2>
+<p>To collect links to inspection data from the Sacramento County Environmental Management Department (SCEMD) for the previous 12 months, a systematic approach was devised, leveraging Selenium for web automation. Initially, the process involved selecting specific date ranges from the SCEMD's inspection database, which necessitated interaction with a calendar interface. Initially, the focus was on extracting data from the current and last month, facilitated by tabs on the calendar. However, this approach proved insufficient for capturing a comprehensive dataset.</p>
+<p>Refinement of the date range selection process was crucial to obtaining a broader dataset, encompassing inspections from March 2023 to the present. This required a more intricate methodology. By identifying the XPath for the &quot;Previous&quot; and &quot;Next&quot; arrow buttons on the calendar interface, the navigation process was automated. By manually navigating through the calendar and observing the number of clicks required to reach specific dates, a systematic approach was devised. Subsequently, Selenium was utilized to programmatically perform the requisite number of clicks on the arrow buttons to navigate to the desired dates.</p>
+<p>Handling dynamic page loading was another challenge encountered during the data collection process. Upon selecting specific dates, it was noted that the inspection data did not load entirely, necessitating interaction with a &quot;Load More&quot; button. To address this, a while loop was implemented to iteratively click the &quot;Load More&quot; button until all inspection data was loaded.</p>
+<p>Once the complete inspection data was loaded, each inspection's URL was extracted for further processing. Utilizing CSS selectors, the &quot;View&quot; buttons corresponding to each inspection were targeted, as XPath did not consistently retrieve the necessary information. The attributes (links) associated with each &quot;View&quot; button were then saved into a list for subsequent analysis.</p>
+<p>By meticulously executing the outlined steps, a comprehensive collection of links to Sacramento County inspection data for the past 12 months was obtained. This process laid the groundwork for subsequent data processing and analysis, enabling insights into health code violations within the county's food establishments.</p>
+<h2 id="scraping-data-from-the-obtained-links-to-inspection-data">Scraping Data from the Obtained Links to Inspection Data</h2>
+<p>In this phase of the project, the focus shifted towards extracting relevant information from the links obtained in the previous step, which led to summaries of observations and corrective actions from specific health inspections conducted at various restaurants. Each page was scraped using BeautifulSoup, a Python library for parsing HTML and XML documents. The process involved retrieving details such as the establishment name, inspection date, address, and health code violations.</p>
+<p>One significant consideration was the possibility of multiple health inspections conducted at the same restaurant over the course of a year. Therefore, the scraping process needed to account for this potential repetition of data.</p>
+<p>The scraping process was executed by iterating through each URL obtained from the previous step and extracting the required information. The key steps involved in the scraping process were as follows:</p>
+<ol>
+<li>
+<p><strong>Establishment Information Extraction:</strong></p>
+<ul>
+<li>The BeautifulSoup library was employed to parse the HTML content of each page.</li>
+<li>The establishment name and address were extracted from the designated HTML elements.</li>
+</ul>
+</li>
+<li>
+<p><strong>Inspection Date Retrieval:</strong></p>
+<ul>
+<li>Inspection dates were located within specific HTML elements and extracted accordingly.</li>
+</ul>
+</li>
+<li>
+<p><strong>Health Code Violations Extraction:</strong></p>
+<ul>
+<li>Health code violations were identified within the inspection summaries.</li>
+<li>Each violation was associated with a specific health code, which ranged from 1 to 49. Sometimes the number had sub-letters, such as 1b and 1c.</li>
+<li>To streamline analysis, only the primary code for each violation was retained.</li>
+<li>A dictionary mapping each health code to its corresponding description was manually inputted from a PDF provided by the Sacramento County titled &quot;Retail Food Inspection Guide.&quot;</li>
+</ul>
+</li>
+<li>
+<p><strong>Handling Large Volume of Links:</strong></p>
+<ul>
+<li>Given the substantial volume of links (nearly 10,000), the scraping process was divided into manageable chunks (500-1000 links at a time) to mitigate the risk of failure.</li>
+<li>To prevent potential server blocks or interruptions, a sleep timer of 1 second was implemented between requests.</li>
+</ul>
+</li>
+<li>
+<p><strong>Error Handling and Data Cleanup:</strong></p>
+<ul>
+<li>Throughout the scraping process, error handling mechanisms were in place to identify and address any issues encountered.</li>
+<li>Approximately 15 links were identified as faulty, lacking the establishment name, and subsequently discarded from the dataset.</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Storage and Merging:</strong></p>
+<ul>
+<li>Results from each scraping iteration were saved as JSON files for further processing.</li>
+<li>At the conclusion of the scraping process, the collected data from all iterations were merged to form a comprehensive dataset for subsequent analysis.</li>
+</ul>
+</li>
+</ol>
+<p>The provided code snippet serves as a reference for the scraping process, showcasing the implementation of BeautifulSoup to extract relevant data from individual URLs. By systematically executing the scraping process and meticulously handling data intricacies, a robust dataset was assembled, laying the groundwork for subsequent exploratory data analysis.</p>
+<h2 id="obtaining-supplementary-yelp-data">Obtaining Supplementary Yelp Data</h2>
+<p>In order to augment our dataset with additional information about food establishments in the greater Sacramento area, we utilized the Yelp Fusion API. This API allows for querying establishments based on various parameters such as location, cuisine type, and price level. Our objective was to gather supplementary data on restaurants, grocery stores, and convenience stores—any establishments selling food items.</p>
+<p>Here's an overview of the process:</p>
+<ol>
+<li>
+<p><strong>API Querying:</strong></p>
+<ul>
+<li>We employed the Yelp Fusion API to conduct search queries for restaurants, grocery stores, and convenience stores in the greater Sacramento area.</li>
+<li>Each establishment's search query results provided information such as rating, review count, price level, cuisine type, address, and coordinates.</li>
+</ul>
+</li>
+<li>
+<p><strong>Handling API Limits:</strong></p>
+<ul>
+<li>The Yelp API imposes query limits, allowing only up to 1000 establishments per query. To circumvent this limitation and obtain a comprehensive list, we executed multiple queries with different parameters.</li>
+</ul>
+</li>
+<li>
+<p><strong>Optimizing Query Results:</strong></p>
+<ul>
+<li>The search queries return results based on location and a sorting algorithm. We utilized four types of sorting operations: distance, rating counts, ratings, and best matches.</li>
+<li>To maximize the number of results, we conducted queries for multiple locations across the greater Sacramento region, including major cities like Elk Grove, Citrus Heights, and Folsom.</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Cleaning and Filtering:</strong></p>
+<ul>
+<li>After aggregating results from all queries, we noticed that some establishments, particularly those offering only takeout and delivery services, did not have valid addresses listed. As these were not relevant to our analysis, we removed them from the dataset.</li>
+</ul>
+</li>
+<li>
+<p><strong>Result Summary:</strong></p>
+<ul>
+<li>In total, we gathered Yelp metadata for 4283 establishments, providing valuable supplementary information to enrich our dataset.</li>
+</ul>
+</li>
+</ol>
+<p>By obtaining supplementary Yelp data, we aimed to enhance our understanding of the food landscape in the greater Sacramento area, complementing the insights derived from SCEMD inspection reports. This additional information will facilitate a more comprehensive analysis of factors influencing food safety and consumer preferences within the region.</p>
+<h2 id="creating-a-key-from-our-datasets-to-merge">Creating a Key from our Datasets to Merge</h2>
+<p>In order to merge our datasets effectively, we needed to devise a unique identifier for each restaurant. This presented a challenge as traditional identifiers such as name, address, and zip code were not suitable due to the presence of multiple establishments with similar or identical attributes. After careful consideration, we settled on a combination of the first four numbers from the establishment's address and the first three letters of its name.</p>
+<p>This approach offered a high degree of uniqueness, as it was highly improbable for two establishments with the same name to share the exact same four-number address. By incorporating both elements, we aimed to create a robust key that would facilitate accurate merging of our datasets.</p>
+<p>Upon merging the datasets, we encountered a common issue where establishments appeared in multiple rows due to having multiple observations (e.g., health inspection data) associated with them. This occurred particularly because the health inspection data was scraped using dates, leading to multiple inspection records for the same restaurant.</p>
+<p>To address this, we implemented a group-by operation followed by an aggregation function. By grouping the data by our established key, we were able to aggregate multiple observations for each establishment. Specifically, we retained the first observation for duplicate data points such as name, latitude, longitude, rating, price, etc., while consolidating different observations into a list. For instance, health code violations and inspection dates were aggregated into lists for each establishment.</p>
+<p>This process resulted in a streamlined dataset with a reduced number of observations, from 3.6k to 2.3k. By consolidating duplicate entries and organizing the data systematically, we ensured the integrity and accuracy of our merged dataset, laying the groundwork for subsequent analysis and insights into the food landscape in the greater Sacramento area.</p>
+<h1 id="data-visualization">Data Visualization</h1>
+<p><img src="file:///c:\Users\alanp\Documents\STA220\207Final\220Final\Images\Category_graph.jpg" alt="alt text"></p>
+<p><img src="file:///c:\Users\alanp\Documents\STA220\207Final\220Final\Images\restaurant_rating_graph.jpg" alt="alt text"></p>
+<p><a href="Images/map.html">Map of Sacramento Restaurants</a></p>
+<h1 id="discussion">Discussion</h1>
+<p><a href="https://www.openstreetmap.org/export#map=13/38.5620/-121.4736">https://www.openstreetmap.org/export#map=13/38.5620/-121.4736</a>
+too big
+went to here
+<a href="http://download.geofabrik.de/north-america/us/california/norcal.html">http://download.geofabrik.de/north-america/us/california/norcal.html</a></p>
+
+            
+            
+        </body>
+        </html>
