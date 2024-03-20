@@ -129,6 +129,8 @@ This process resulted in a streamlined dataset with a reduced number of observat
 
 ![alt text](Images/Category_graph.jpg)
 
+![alt text](<Images/Screenshot 2024-03-20 164159.jpg>)
+
 [Map of Sacramento Restaurants](Images/map.html)
 
 # Discussion
