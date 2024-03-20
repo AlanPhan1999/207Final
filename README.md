@@ -117,6 +117,9 @@ This process resulted in a streamlined dataset with a reduced number of observat
 
 ![alt text](Images/restaurant_rating_graph.jpg)
 
+![alt text](Images/Lowest_Category_graph.jpg)
+
+![alt text](Images/top_10_most_rated_Category_graph.jpg)
 
 [Map of Sacramento Restaurants](Images/map.html)
 
