@@ -122,14 +122,13 @@ The visualization is created using a bar plot, with each bar representing the nu
 Upon examination of the graph, it's evident that inspection activity varies across seasons. 
 
 
-![alt text](Images/inspections_by_month.jpg)
-
+<center><img src="Images/inspections_by_month.jpg" alt="image" width="800" height="auto"></center>
 It's noteworthy that inspection activity tends to peak during the colder months (winter and autumn), with relatively lower activity observed during the warmer months (spring and summer). However, an anomaly is observed in August, where there's a significant increase in inspections compared to the preceding summer months.
 
 This visualization offers valuable insights into seasonal patterns in inspection activity, which can inform resource allocation and planning for regulatory agencies and stakeholders in the food industry. Additionally, it underscores the importance of considering seasonal variations when analyzing inspection data and implementing targeted interventions to maintain food safety standards year-round.
 
 
-![alt text](Images/scatter_plot_rating_vs_reviews.png)
+<center><img src="Images/scatter_plot_rating_vs_reviews.png" alt = "image" width"800" height="auto"></center>
 
 **Visualizing Health Code Violations**
 
@@ -141,13 +140,16 @@ Through this scatter plot, we can discern any potential correlations between est
 
 
 
-![alt text](Images/scatter_plot_rating_vs_violations.png)
+
+
+<center><img src="Images/scatter_plot_rating_vs_violations.png" alt = "image" width"800" height="auto"></center>
 
 From this Scatter Plot, it is noteworthy that there is a general trend with more violations and higher ratings across all price points in restaurants. Also, there is a clear correlation between price point and rating, where lower priced restaurants tend to have lower ratings and higher priced restaurants generally have higher ratings. 
 
 In the next figure, Number of Health Codes Violations, we visualize the most common health code violations in Sacramento in the past 12 months.
 
-![alt text](Images/Health_Code.jpg)
+
+<center><img src="Images/Health_Code.jpg" alt = "image" width"800" height="auto"></center>
 
  **Logic Behind Bayesian Averages**
 
@@ -179,12 +181,14 @@ Utilizing Bayesian averaging helped to address the inherent limitations of relyi
 
 The following 4 Figures utilize the aforementioned Bayesian Averaging methods.
 
-![alt text](Images/restaurant_rating_graph.jpg)
+
+<center><img src="Images/restaurant_rating_graph.jpg" alt = "image" width"800" height="auto"></center>
 
 The graph above shows the top ten highest weighted average restaurants in the greater Sacramento Region.
 
 
-![alt text](Images/Category_graph.jpg)
+
+<center><img src="Images/Category_graph.jpg" alt = "image" width"800" height="auto"></center>
 
 The graph above shows the top ten highest rated categories. In this order the top ten are:
 1. Mediterranean
@@ -198,7 +202,8 @@ The graph above shows the top ten highest rated categories. In this order the to
 9. Bubble Tea
 10. Indian
 
-![alt text](Images/top_10_most_rated_Category_graph.jpg)
+
+<center><img src="Images/top_10_most_rated_Category_graph.jpg" alt = "image" width"800" height="auto"></center>
 
 The graph above shows top 10 most rated categories ordered by highest ratings.
 In this order the top ten are:
@@ -215,7 +220,8 @@ In this order the top ten are:
 
 Intuitively these categories being the top ten makes sense. There are a lot of restaurants that cook at least one of these categories which would increase the odds of that category being rated.
 
-![alt text](Images/Lowest_Category_graph.jpg)
+
+<center><img src="Images/Lowest_Category_graph.jpg" alt = "image" width"800" height="auto"></center>
 
 The Image above shows the top 10 lowest rated categories. In this order the lowest ten are:
 1. Tacos
@@ -232,7 +238,8 @@ The Image above shows the top 10 lowest rated categories. In this order the lowe
 These ratings make intuitive sense as these categories has a fast food restaurant tied to them which would drastically lower the average ratings.
 
 
-![alt text](<Images/Screenshot 2024-03-20 164159.jpg>)
+
+<center><img src="Images/Screenshot 2024-03-20 164159.jpg" alt = "image" width"800" height="auto"></center>
 
 The plot above shows a map of Sacramento where each point is a restaurant. The color represents the average waiting of the restaurant (green being highest rated, yellow being mid rated, and red being low rated). The size of the point represents the number of health code violations found by the restaurant's health inspections in a year. Interestingly it appears that downtown Sacramento has decently rated restaurants while restaurants further from downtown sacramento tends to have lower rated restaurants. 
 
@@ -241,11 +248,13 @@ The plot above shows a map of Sacramento where each point is a restaurant. The c
 Visualization of restaurant data by zip code reveals notable patterns in both price levels and ratings.
 
 
-![alt text](Images/Price.png)
+
+<center><img src="Images/Price.png" alt = "image" width"800" height="auto"></center>
 
 Price levels, denoted by the number of dollar signs ($ to $$$$), exhibit a predictable trend across neighborhoods. Generally, areas with higher affluence, such as downtown, Folsom, and Elk Grove, tend to boast higher average price levels. This suggests a correlation between neighborhood socioeconomic status and restaurant pricing.
 
-![alt text](Images/Ratings.png)
+
+<center><img src="Images/Ratings.png" alt = "image" width"800" height="auto"></center>
 
 Similarly, the distribution of ratings follows a similar pattern, with affluent neighborhoods generally displaying higher average ratings. An exception to this trend is observed in Galt, where despite having a relatively average price level, the average ratings are notably high. This divergence suggests that factors beyond price alone influence the perceived quality of restaurants in certain areas.
 

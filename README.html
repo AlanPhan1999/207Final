@@ -261,18 +261,18 @@ number_sections: yes</h2>
 <p>In this section, we present a visualization of the number of inspections conducted in Sacramento over a 12-month period. The graph is segmented by seasons to provide insights into seasonal variations in inspection activity.</p>
 <p>The visualization is created using a bar plot, with each bar representing the number of inspections conducted in a specific month. The color of each bar corresponds to the season in which the month falls: blue for winter, green for spring, orange for summer, and brown for autumn.</p>
 <p>Upon examination of the graph, it's evident that inspection activity varies across seasons.</p>
-<p><img src="Images/inspections_by_month.jpg" alt="alt text"></p>
-<p>It's noteworthy that inspection activity tends to peak during the colder months (winter and autumn), with relatively lower activity observed during the warmer months (spring and summer). However, an anomaly is observed in August, where there's a significant increase in inspections compared to the preceding summer months.</p>
+<center><img src="Images/inspections_by_month.jpg" alt="image" width="800" height="auto"></center>
+It's noteworthy that inspection activity tends to peak during the colder months (winter and autumn), with relatively lower activity observed during the warmer months (spring and summer). However, an anomaly is observed in August, where there's a significant increase in inspections compared to the preceding summer months.
 <p>This visualization offers valuable insights into seasonal patterns in inspection activity, which can inform resource allocation and planning for regulatory agencies and stakeholders in the food industry. Additionally, it underscores the importance of considering seasonal variations when analyzing inspection data and implementing targeted interventions to maintain food safety standards year-round.</p>
-<p><img src="Images/scatter_plot_rating_vs_reviews.png" alt="alt text"></p>
+<center><img src="Images/scatter_plot_rating_vs_reviews.png" alt = "image" width"800" height="auto"></center>
 <p><strong>Visualizing Health Code Violations</strong></p>
 <p>In this section, we delve into visualizing health code violations within food establishments, aiming to glean insights into compliance trends and potential areas for improvement. To ensure a fair comparison across establishments, we chose to calculate health code violations per inspection, thereby mitigating the impact of restaurants with a higher number of inspections in the last 12 months.</p>
 <p>One of the visualization techniques employed is a scatter plot, leveraging data on establishment ratings and the number of violations per inspection. Each data point in the scatter plot represents an individual establishment, with the x-axis indicating the establishment's rating and the y-axis denoting the number of violations observed per inspection.</p>
 <p>Through this scatter plot, we can discern any potential correlations between establishment ratings and health code violations. Additionally, by observing patterns and outliers, we can identify establishments that warrant closer scrutiny or intervention from regulatory agencies. This visualization aids stakeholders in the food industry and regulatory bodies in prioritizing inspections and implementing targeted interventions to enhance food safety standards and safeguard public health.</p>
-<p><img src="Images/scatter_plot_rating_vs_violations.png" alt="alt text"></p>
+<center><img src="Images/scatter_plot_rating_vs_violations.png" alt = "image" width"800" height="auto"></center>
 <p>From this Scatter Plot, it is noteworthy that there is a general trend with more violations and higher ratings across all price points in restaurants. Also, there is a clear correlation between price point and rating, where lower priced restaurants tend to have lower ratings and higher priced restaurants generally have higher ratings.</p>
 <p>In the next figure, Number of Health Codes Violations, we visualize the most common health code violations in Sacramento in the past 12 months.</p>
-<p><img src="Images/Health_Code.jpg" alt="alt text"></p>
+<center><img src="Images/Health_Code.jpg" alt = "image" width"800" height="auto"></center>
 <p><strong>Logic Behind Bayesian Averages</strong></p>
 <p>In this data visualization section, we aimed to identify the top categories with the highest ratings. However, a challenge arose when utilizing average ratings as a metric, as it can be heavily skewed by differing sample sizes. To address this issue and ensure more reliable ratings, we employed Bayesian averaging.</p>
 <p>Here's how our Bayesian weighted averages were calculated:</p>
@@ -301,9 +301,9 @@ Where:
 <p>By applying this Bayesian average formula, we aimed to mitigate the effects of small sample sizes on the calculated average ratings. This approach allows for more robust and reliable ratings by incorporating both the prior rating and the actual ratings from the sample, thus providing a more accurate representation of the category's overall rating.</p>
 <p>Utilizing Bayesian averaging helped to address the inherent limitations of relying solely on average ratings, particularly when dealing with categories with varying sample sizes. With this approach, we aimed to ensure a more equitable representation of each category's rating, enabling us to identify the top categories with confidence in our data visualization analysis.</p>
 <p>The following 4 Figures utilize the aforementioned Bayesian Averaging methods.</p>
-<p><img src="Images/restaurant_rating_graph.jpg" alt="alt text"></p>
+<center><img src="Images/restaurant_rating_graph.jpg" alt = "image" width"800" height="auto"></center>
 <p>The graph above shows the top ten highest weighted average restaurants in the greater Sacramento Region.</p>
-<p><img src="Images/Category_graph.jpg" alt="alt text"></p>
+<center><img src="Images/Category_graph.jpg" alt = "image" width"800" height="auto"></center>
 <p>The graph above shows the top ten highest rated categories. In this order the top ten are:</p>
 <ol>
 <li>Mediterranean</li>
@@ -317,7 +317,7 @@ Where:
 <li>Bubble Tea</li>
 <li>Indian</li>
 </ol>
-<p><img src="Images/top_10_most_rated_Category_graph.jpg" alt="alt text"></p>
+<center><img src="Images/top_10_most_rated_Category_graph.jpg" alt = "image" width"800" height="auto"></center>
 <p>The graph above shows top 10 most rated categories ordered by highest ratings.
 In this order the top ten are:</p>
 <ol>
@@ -333,7 +333,7 @@ In this order the top ten are:</p>
 <li>Burgers</li>
 </ol>
 <p>Intuitively these categories being the top ten makes sense. There are a lot of restaurants that cook at least one of these categories which would increase the odds of that category being rated.</p>
-<p><img src="Images/Lowest_Category_graph.jpg" alt="alt text"></p>
+<center><img src="Images/Lowest_Category_graph.jpg" alt = "image" width"800" height="auto"></center>
 <p>The Image above shows the top 10 lowest rated categories. In this order the lowest ten are:</p>
 <ol>
 <li>Tacos</li>
@@ -348,13 +348,13 @@ In this order the top ten are:</p>
 <li>Fast Food</li>
 </ol>
 <p>These ratings make intuitive sense as these categories has a fast food restaurant tied to them which would drastically lower the average ratings.</p>
-<p><img src="Images/Screenshot%202024-03-20%20164159.jpg" alt="alt text"></p>
+<center><img src="Images/Screenshot 2024-03-20 164159.jpg" alt = "image" width"800" height="auto"></center>
 <p>The plot above shows a map of Sacramento where each point is a restaurant. The color represents the average waiting of the restaurant (green being highest rated, yellow being mid rated, and red being low rated). The size of the point represents the number of health code violations found by the restaurant's health inspections in a year. Interestingly it appears that downtown Sacramento has decently rated restaurants while restaurants further from downtown sacramento tends to have lower rated restaurants.</p>
 <p><strong>Geoplot Depicting Variation of Average Price Level and Average Ratings of Different Zipcodes</strong></p>
 <p>Visualization of restaurant data by zip code reveals notable patterns in both price levels and ratings.</p>
-<p><img src="Images/Price.png" alt="alt text"></p>
+<center><img src="Images/Price.png" alt = "image" width"800" height="auto"></center>
 <p>Price levels, denoted by the number of dollar signs ($ to $$$$), exhibit a predictable trend across neighborhoods. Generally, areas with higher affluence, such as downtown, Folsom, and Elk Grove, tend to boast higher average price levels. This suggests a correlation between neighborhood socioeconomic status and restaurant pricing.</p>
-<p><img src="Images/Ratings.png" alt="alt text"></p>
+<center><img src="Images/Ratings.png" alt = "image" width"800" height="auto"></center>
 <p>Similarly, the distribution of ratings follows a similar pattern, with affluent neighborhoods generally displaying higher average ratings. An exception to this trend is observed in Galt, where despite having a relatively average price level, the average ratings are notably high. This divergence suggests that factors beyond price alone influence the perceived quality of restaurants in certain areas.</p>
 <p><a href="Images/map.html">Map of Sacramento Restaurants</a></p>
 <h1 id="discussion">Discussion</h1>
@@ -377,5 +377,12 @@ In this order the top ten are:</p>
 <h3 id="5-data-driven-insights-and-decision-making">5. Data-driven Insights and Decision Making</h3>
 <p>The comprehensive data scraping, organization, merge, and analysis provides valuable insights into food safety trends, consumer preferences, and regulatory dynamics within the Sacramento food landscape. These insights serve as a foundation for informed decision-making, targeted interventions, and ongoing evaluation of regulatory practices.</p>
 <p>By leveraging publicly available data, regulatory agencies and stakeholders can adopt proactive measures to enhance food safety standards, allocate resources effectively, and address localized challenges and opportunities within Sacramento County's diverse culinary ecosystem. Continuous monitoring, analysis, and adaptation based on publicly available, data-driven insights are crucial for maintaining robust food safety protocols, safeguarding public health, and fostering a safer food industry.</p>
+<p><a href="https://www.openstreetmap.org/export#map=13/38.5620/-121.4736">https://www.openstreetmap.org/export#map=13/38.5620/-121.4736</a>
+too big
+went to here
+<a href="http://download.geofabrik.de/north-america/us/california/norcal.html">http://download.geofabrik.de/north-america/us/california/norcal.html</a></p>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
         </body>
         </html>
