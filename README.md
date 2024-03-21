@@ -113,28 +113,178 @@ This process resulted in a streamlined dataset with a reduced number of observat
 
 # Data Visualization
 
+**Visualizing Inspections by Month**
+
+In this section, we present a visualization of the number of inspections conducted in Sacramento over a 12-month period. The graph is segmented by seasons to provide insights into seasonal variations in inspection activity.
+
+The visualization is created using a bar plot, with each bar representing the number of inspections conducted in a specific month. The color of each bar corresponds to the season in which the month falls: blue for winter, green for spring, orange for summer, and brown for autumn.
+
+Upon examination of the graph, it's evident that inspection activity varies across seasons. 
+
+
 ![alt text](Images/inspections_by_month.jpg)
+
+It's noteworthy that inspection activity tends to peak during the colder months (winter and autumn), with relatively lower activity observed during the warmer months (spring and summer). However, an anomaly is observed in August, where there's a significant increase in inspections compared to the preceding summer months.
+
+This visualization offers valuable insights into seasonal patterns in inspection activity, which can inform resource allocation and planning for regulatory agencies and stakeholders in the food industry. Additionally, it underscores the importance of considering seasonal variations when analyzing inspection data and implementing targeted interventions to maintain food safety standards year-round.
+
 
 ![alt text](Images/scatter_plot_rating_vs_reviews.png)
 
+**Visualizing Health Code Violations**
+
+In this section, we delve into visualizing health code violations within food establishments, aiming to glean insights into compliance trends and potential areas for improvement. To ensure a fair comparison across establishments, we chose to calculate health code violations per inspection, thereby mitigating the impact of restaurants with a higher number of inspections in the last 12 months.
+
+One of the visualization techniques employed is a scatter plot, leveraging data on establishment ratings and the number of violations per inspection. Each data point in the scatter plot represents an individual establishment, with the x-axis indicating the establishment's rating and the y-axis denoting the number of violations observed per inspection.
+
+Through this scatter plot, we can discern any potential correlations between establishment ratings and health code violations. Additionally, by observing patterns and outliers, we can identify establishments that warrant closer scrutiny or intervention from regulatory agencies. This visualization aids stakeholders in the food industry and regulatory bodies in prioritizing inspections and implementing targeted interventions to enhance food safety standards and safeguard public health.
+
+
+
 ![alt text](Images/scatter_plot_rating_vs_violations.png)
+
+From this Scatter Plot, it is noteworthy that there is a general trend with more violations and higher ratings across all price points in restaurants. Also, there is a clear correlation between price point and rating, where lower priced restaurants tend to have lower ratings and higher priced restaurants generally have higher ratings. 
+
+In the next figure, Number of Health Codes Violations, we visualize the most common health code violations in Sacramento in the past 12 months.
 
 ![alt text](Images/Health_Code.jpg)
 
+ **Logic Behind Bayesian Averages**
+
+In this data visualization section, we aimed to identify the top categories with the highest ratings. However, a challenge arose when utilizing average ratings as a metric, as it can be heavily skewed by differing sample sizes. To address this issue and ensure more reliable ratings, we employed Bayesian averaging.
+
+Here's how our Bayesian weighted averages were calculated:
+
+1. **Prior Rating and Sample Size Calculation:**
+   
+   Prior ratings were determined differently based on our goal. For restaurants we did a sample size prior of 50 (we believe that a minimum of 50 reviews is a good estimate for gauging a restaurant) and a prior average rating of 4 (generally a common number for an average rating).
+
+   For the Categories calculation, since we are grouping by categories, it is more difficult to determine a reasonable prior that intuitively made sense. For these we utilized the average rating of the categories and then the average number of reviews for the priors. However, specifically for the top 10 most rated categories graph we ignored the prior because there are a lot of reviews for these categories.
+
+   
+2. **Application of Bayesian Average Formula:**
+   - Bayesian average is calculated using the formula:
+     ```
+     Bayesian Average = ((c * m) + (number of ratings * review)) / (c + number of ratings)
+     ```
+     Where:
+     - 'c' is the prior sample size
+     - 'm' is the prior rating
+     - 'number of ratings' is the number of ratings for a specific category
+     - 'review' is the average rating for that category
+
+By applying this Bayesian average formula, we aimed to mitigate the effects of small sample sizes on the calculated average ratings. This approach allows for more robust and reliable ratings by incorporating both the prior rating and the actual ratings from the sample, thus providing a more accurate representation of the category's overall rating.
+
+Utilizing Bayesian averaging helped to address the inherent limitations of relying solely on average ratings, particularly when dealing with categories with varying sample sizes. With this approach, we aimed to ensure a more equitable representation of each category's rating, enabling us to identify the top categories with confidence in our data visualization analysis.
+
+The following 4 Figures utilize the aforementioned Bayesian Averaging methods.
+
 ![alt text](Images/restaurant_rating_graph.jpg)
 
-![alt text](Images/Lowest_Category_graph.jpg)
+The graph above shows the top ten highest weighted average restaurants in the greater Sacramento Region.
 
-![alt text](Images/top_10_most_rated_Category_graph.jpg)
 
 ![alt text](Images/Category_graph.jpg)
 
+The graph above shows the top ten highest rated categories. In this order the top ten are:
+1. Mediterranean
+2. Vegan
+3. Halal
+4. Coffee Roasteries
+5. Wine Bars
+6. Greek
+7. Thai
+8. Korean
+9. Bubble Tea
+10. Indian
+
+![alt text](Images/top_10_most_rated_Category_graph.jpg)
+
+The graph above shows top 10 most rated categories ordered by highest ratings.
+In this order the top ten are:
+1. New American
+2. Sushi Bars
+3. Seafood
+4. Breakfast and Brunch
+5. American
+6. Coffee & Tea
+7. Sandwiches
+8. Pizza
+9. Mexican
+10. Burgers
+
+Intuitively these categories being the top ten makes sense. There are a lot of restaurants that cook at least one of these categories which would increase the odds of that category being rated.
+
+![alt text](Images/Lowest_Category_graph.jpg)
+
+The Image above shows the top 10 lowest rated categories. In this order the lowest ten are:
+1. Tacos
+2. Coffee & Tea
+3. Grocery
+4. Chicken Shop
+5. Pizza
+6. Sandwiches
+7. Mexican
+8. Chicken Wings
+9. Burgers
+10. Fast Food
+
+These ratings make intuitive sense as these categories has a fast food restaurant tied to them which would drastically lower the average ratings.
+
+
 ![alt text](<Images/Screenshot 2024-03-20 164159.jpg>)
+
+The plot above shows a map of Sacramento where each point is a restaurant. The color represents the average waiting of the restaurant (green being highest rated, yellow being mid rated, and red being low rated). The size of the point represents the number of health code violations found by the restaurant's health inspections in a year. Interestingly it appears that downtown Sacramento has decently rated restaurants while restaurants further from downtown sacramento tends to have lower rated restaurants. 
+
+**Geoplot Depicting Variation of Average Price Level and Average Ratings of Different Zipcodes**
+
+Visualization of restaurant data by zip code reveals notable patterns in both price levels and ratings.
+
+
+![alt text](Images/Price.png)
+
+Price levels, denoted by the number of dollar signs ($ to $$$$), exhibit a predictable trend across neighborhoods. Generally, areas with higher affluence, such as downtown, Folsom, and Elk Grove, tend to boast higher average price levels. This suggests a correlation between neighborhood socioeconomic status and restaurant pricing.
+
+![alt text](Images/Ratings.png)
+
+Similarly, the distribution of ratings follows a similar pattern, with affluent neighborhoods generally displaying higher average ratings. An exception to this trend is observed in Galt, where despite having a relatively average price level, the average ratings are notably high. This divergence suggests that factors beyond price alone influence the perceived quality of restaurants in certain areas.
 
 [Map of Sacramento Restaurants](Images/map.html)
 
 # Discussion
 
+### 1. Seasonal Inspection Activity
+The analysis of inspections by month unveils intriguing seasonal nuances in inspection patterns. During the colder months, specifically winter and autumn, there is a discernible uptick in inspection activity. This trend aligns with common expectations, as colder weather often brings about increased concerns regarding food safety and hygiene practices. Factors such as temperature control, storage procedures, and handling practices may be more closely scrutinized during these periods, contributing to higher inspection rates.
+
+However, what stands out as particularly noteworthy is the anomaly observed in June and July. Typically considered a warmer summer months, June and July experiences a significant lack in inspection numbers, deviating from the usual monthly trend. This deviation prompts questions regarding potential catalysts for lessened inspection activity during this period. Potential factors could include seasonal events, festivals, or increased tourist activity, all of which may impact food establishments' operations and require less stringent regulatory oversight.
+
+Further exploration into the specific drivers behind the Summer season anomaly could provide valuable insights into dynamic regulatory needs across different seasons and events within Sacramento County.
+
+### 2. Correlation Between Establishment Ratings and Violations
+The scatter plot analysis delving into the relationship between establishment ratings and health code violations uncovers a surprising positive correlation. Contrary to conventional expectations, higher-rated establishments tend to exhibit a higher frequency of health code violations per inspection. This finding challenges the assumption that higher ratings consistently equate to better compliance with health regulations.
+
+Possible explanations for this correlation could stem from various factors. Higher-rated establishments may attract larger customer volumes, leading to increased operational complexities and potential lapses in compliance. Conversely, lower rated restaurants may be under higher scrutiny and are more careful with their health code adherance. Additionally, stringent adherence to health codes may not always be correlated to customer ratings, as ratings often encompass broader aspects such as ambiance, service quality, and menu variety, which may overshadow food safety considerations.
+
+This observation underscores the complexity of interpreting establishment ratings in isolation and highlights the need for multifaceted assessments when gauging food safety and regulatory compliance.
+
+### 3. Top-Rated Categories and Geographic Variations
+The utilization of Bayesian averaging offers valuable insights into the top-rated categories within Sacramento's food landscape. Categories such as Mediterranean, Vegan, and Halal emerge as consistently highly rated, indicating consumer preferences for diverse and healthier culinary options. These findings reflect evolving dietary trends and heightened awareness of health-conscious dining choices among Sacramento residents.
+
+Moreover, the geoplot analysis uncovers notable geographic variations in restaurant quality and compliance. Downtown and affluent areas exhibit higher-rated establishments with fewer violations, indicative of robust food safety practices and regulatory adherence. In contrast, outlying regions demonstrate lower-rated establishments with higher violation frequencies, suggesting potential disparities in regulatory oversight and resource allocation across different neighborhoods.
+
+The observed geographic variations emphasize the importance of targeted interventions tailored to specific regions, considering local demographics, economic factors, and regulatory dynamics.
+
+### 4. Price Levels and Consumer Perception
+The analysis of price levels across zip codes unveils intriguing insights into consumer perception and dining preferences. Higher-income neighborhoods tend to host higher-priced restaurants, reflecting a perceived correlation between price and quality. This association aligns with common consumer behavior, where higher prices often signify premium offerings and elevated dining experiences.
+
+However, the presence of exceptions, such as Galt with relatively high ratings despite average pricing, introduces a layer of complexity to consumer perceptions. Factors beyond price, such as unique menu offerings, exceptional service, or community reputation, may significantly influence how consumers evaluate restaurant quality.
+
+This nuanced understanding of consumer perception underscores the multifaceted nature of dining experiences and the diverse factors that contribute to establishment ratings and success.
+
+### 5. Data-driven Insights and Decision Making
+The comprehensive data scraping, organization, merge, and analysis provides valuable insights into food safety trends, consumer preferences, and regulatory dynamics within the Sacramento food landscape. These insights serve as a foundation for informed decision-making, targeted interventions, and ongoing evaluation of regulatory practices.
+
+By leveraging publicly available data, regulatory agencies and stakeholders can adopt proactive measures to enhance food safety standards, allocate resources effectively, and address localized challenges and opportunities within Sacramento County's diverse culinary ecosystem. Continuous monitoring, analysis, and adaptation based on publicly available, data-driven insights are crucial for maintaining robust food safety protocols, safeguarding public health, and fostering a safer food industry. 
 
 https://www.openstreetmap.org/export#map=13/38.5620/-121.4736
 too big
