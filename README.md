@@ -1,11 +1,9 @@
 ---
 title: "STA 220 Project: Restaurant Health and Ratings Analaysis"
+
 author: "Sandeep Nair, Alan Phan, Thommas Phan"
+
 date: "March 20, 2024"
-output:
-  html_document:
-    df_print: paged
-    number_sections: yes
 ---
 
 # Introduction / Background
@@ -294,8 +292,3 @@ This nuanced understanding of consumer perception underscores the multifaceted n
 The comprehensive data scraping, organization, merge, and analysis provides valuable insights into food safety trends, consumer preferences, and regulatory dynamics within the Sacramento food landscape. These insights serve as a foundation for informed decision-making, targeted interventions, and ongoing evaluation of regulatory practices.
 
 By leveraging publicly available data, regulatory agencies and stakeholders can adopt proactive measures to enhance food safety standards, allocate resources effectively, and address localized challenges and opportunities within Sacramento County's diverse culinary ecosystem. Continuous monitoring, analysis, and adaptation based on publicly available, data-driven insights are crucial for maintaining robust food safety protocols, safeguarding public health, and fostering a safer food industry. 
-
-https://www.openstreetmap.org/export#map=13/38.5620/-121.4736
-too big
-went to here
-http://download.geofabrik.de/north-america/us/california/norcal.html
