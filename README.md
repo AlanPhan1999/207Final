@@ -1,5 +1,5 @@
 ---
-title: "STA 220 Project: Insert Title"
+title: "STA 220 Project: Restaurant Health and Ratings Analaysis"
 author: "Sandeep Nair, Alan Phan, Thommas Phan"
 date: "March 20, 2024"
 output:
