@@ -243,7 +243,7 @@ The Image above shows the top 10 lowest rated categories. In this order the lowe
 These ratings make intuitive sense as these categories has a fast food restaurant tied to them which would drastically lower the average ratings.
 
 
-
+**Color and Size map of Restaurants by their Average Rating and Number of Violations**
 <center><img src="Images/Screenshot 2024-03-20 164159.jpg" alt = "image" width"800" height="auto"></center>
 
 The plot above shows a map of Sacramento where each point is a restaurant. The color represents the average waiting of the restaurant (green being highest rated, yellow being mid rated, and red being low rated). The size of the point represents the number of health code violations found by the restaurant's health inspections in a year. Interestingly it appears that downtown Sacramento has decently rated restaurants while restaurants further from downtown sacramento tends to have lower rated restaurants. 
