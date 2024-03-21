@@ -187,15 +187,15 @@ Utilizing Bayesian averaging helped to address the inherent limitations of relyi
 The following 4 Figures utilize the aforementioned Bayesian Averaging methods.
 
 
-<center><img src="Images/restaurant_rating_graph.jpg" alt = "image" width"800" height="auto"></center>
+<center><img src="Images/RestaurantTable.png" alt = "image" width"500" height="200"></center>
 
-The graph above shows the top ten highest weighted average restaurants in the greater Sacramento Region.
+The Table above shows the top ten highest weighted average restaurants in the greater Sacramento Region.
 
 
+<center><img src="Images/mytable.png" alt = "image" width"500" height="200"></center>
 
-<center><img src="Images/Category_graph.jpg" alt = "image" width"800" height="auto"></center>
 
-The graph above shows the top ten highest rated categories. In this order the top ten are:
+The Table above shows the top ten highest rated categories. In this order the top ten are:
 1. Mediterranean
 2. Vegan
 3. Halal
