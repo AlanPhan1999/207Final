@@ -6,6 +6,13 @@ author: "Sandeep Nair, Alan Phan, Thommas Phan"
 date: "March 20, 2024"
 ---
 
+"STA 220 Project: Restaurant Health and Ratings Analaysis"
+==============
+
+**Author:** *Sandeep Nair, Alan Phan, Thommas Phan*
+
+**Date:** *March 20, 2024*
+
 # Introduction / Background
 
 In today's landscape of heightened concern for food safety and public health, regulatory bodies like the Sacramento County Environmental Management Department (SCEMD) play a crucial role in ensuring community well-being. Driven by a commitment to enhancing quality of life, SCEMD employs various strategies including education, surveillance, enforcement, and community service, with a focus on mitigating foodborne illnesses—a significant health and economic burden.
