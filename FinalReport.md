@@ -195,52 +195,30 @@ The Table above shows the top ten highest weighted average restaurants in the gr
 <center><img src="Images/mytable.png" alt = "image" width"500" height="200"></center>
 
 
-The Table above shows the top ten highest rated categories. In this order the top ten are:
-1. Mediterranean
-2. Vegan
-3. Halal
-4. Coffee Roasteries
-5. Wine Bars
-6. Greek
-7. Thai
-8. Korean
-9. Bubble Tea
-10. Indian
+**Trends across popular Categories**
+
+In this section we analyze how popular categories differ across ratings, price and health code violations. However, before we delve into that, we want to see underlying trends in the yelp ratings and price system.
+
+<center><img src="Images/yelp_hist.png" alt = "image" width"800" height="auto"></center>
+
+In the plots above, we see that the rating of 4 is the most popular amongst restaurants. The distribution is skewed and not many restaurants have a rating below 2. In addition to this , we see that most restaurants have either a price level of "$" or "$$". Very few have price levels "$$$" and "$$$$"
 
 
-<center><img src="Images/top_10_most_rated_Category_graph.jpg" alt = "image" width"800" height="auto"></center>
+<center><img src="Images/mean_metrics.png" alt = "image" width"800" height="auto"></center>
 
-The graph above shows top 10 most rated categories ordered by highest ratings.
-In this order the top ten are:
-1. New American
-2. Sushi Bars
-3. Seafood
-4. Breakfast and Brunch
-5. American
-6. Coffee & Tea
-7. Sandwiches
-8. Pizza
-9. Mexican
-10. Burgers
+This image shows the mean metrics for the 20 most popular restaurant categories. The indicies are order in terms of rank so "breakfast and Brunch" is the most popular category. We see a variety of trends in these plots
 
-Intuitively these categories being the top ten makes sense. There are a lot of restaurants that cook at least one of these categories which would increase the odds of that category being rated.
+1. Mean Rating:
+    We see that Burgers, Fast food and chicken wings categories are the lowest rated while new american, Thai and Japanese are highly rated
 
+2. Mean Price level:
+   Mexican, fast food , burgers and sandwiches are amongst the cheaper categories. Italian and American restaurants are expensive
 
-<center><img src="Images/Lowest_Category_graph.jpg" alt = "image" width"800" height="auto"></center>
+3. Mean Number of Inspections:
+   We see that all cuisines have approximately the same average number of inspection during the time we survey. This goes to show that there are no biases in choosing restaurants who are inspected.
 
-The Image above shows the top 10 lowest rated categories. In this order the lowest ten are:
-1. Tacos
-2. Coffee & Tea
-3. Grocery
-4. Chicken Shop
-5. Pizza
-6. Sandwiches
-7. Mexican
-8. Chicken Wings
-9. Burgers
-10. Fast Food
-
-These ratings make intuitive sense as these categories has a fast food restaurant tied to them which would drastically lower the average ratings.
+4. Mean Violation per Inspection:
+   From this plot we see that Mexican, Burgers, Fast foods are the categories with the least violations. This may be suprising since they are also amongst the cheapest and lowest rated. Seafood, Pizza and chinese have the most violations.
 
 
 **Color and Size map of Restaurants by their Average Rating and Number of Violations**
